@@ -574,9 +574,9 @@ module.exports = msgHandler = async (client, message) => {
             const link = args[1]
             const key = args[2]
             const tGr = await client.getAllGroups()
-            const minMem = 30
+            const minMem = 1
             const isLink = link.match(/(https:\/\/chat.whatsapp.com)/gi)
-            if (key !== 'lGjYt4zA5SQlTDx9z9Ca') return client.reply(from, '*key* salah! silahkan chat owner bot unruk mendapatkan key yang valid', id)
+            if (key !== 'ansbot') return client.reply(from, '*key* salah! silahkan chat owner bot unruk mendapatkan key yang valid', id)
             const check = await client.inviteInfo(link)
             if (!isLink) return client.reply(from, 'Ini link? 👊🤬', id)
             if (tGr.length > 15) return client.reply(from, 'Maaf jumlah group sudah maksimal!', id)
